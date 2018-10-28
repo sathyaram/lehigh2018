@@ -1,0 +1,20 @@
+name = Lehigh Official Theme 2018
+description = This is the official lehigh2018 theme.
+screenshot = screenshot.png
+core = 7.x
+
+stylesheets[all][] = css/lehigh2018.css
+
+scripts[] = js/lehigh2018.js
+
+regions[header]          = Header
+regions[navigation]      = Navigation
+regions[help]            = Help
+regions[highlighted]     = Highlighted
+regions[content]         = Content
+regions[sidebar_second]  = Right Sidebar
+regions[footer]    		 = Footer
+regions[sidebar_first]   = Unsupported First Sidebar
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom

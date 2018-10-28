@@ -1,0 +1,78 @@
+/*=============
+---VARIABLES---
+=============*/
+
+// Colors - Internal variables
+$black: #000000;
+$white: #ffffff;
+
+$lightest-brown:#dfd7ce;
+$lighter-brown:#cbbfb2;
+$light-brown:#a79280;
+$semi-brown:#7f5b42;
+$grey-brown:#7c7569;
+$off-brown: #7c6a56;
+$lehigh-brown:#502d0e;
+$dark-brown:#492d1b;
+$darker-brown:#21150d;
+//$light-brown:#e0d1c0;
+
+$gray:#cccccc;
+$slate-gray: #303030;
+$light-gray: #f8f8f8;
+$drupal-blue:#0678BE;
+$lehigh-gold:#ffd13f;
+$link-blue:#497ba4;
+
+//Accent Color
+$accent-color: $off-brown !default;
+
+// Font Variables
+$headline-font: 'Merriweather', serif;
+$body-font: 'Montserrat', sans-serif;
+
+// Social Media Colors
+$color-twitter-blue: #4f95fd;
+$color-instagram-blue: #45719a;
+$color-linkedin-blue: #2079b5;
+$color-facebook-blue: #405797;
+$color-youtube-red: #c12e2f;
+
+// Break Points - To be used for min sizes
+$break-menu-height:46px;
+$break-mobile-portrait: 420px;
+$break-mobile-landscape: 576px;
+$break-tablet: 768px;
+$break-desktop: 992px;
+$break-screen: 1080px;
+$break-desktop-large: 1280px;
+
+/*----Mixins----*/
+
+// Clearfix for Floats
+@mixin clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: ' ';
+        clear: both;
+        height: 0;
+    }
+}
+
+// Smoooth Transition
+@mixin transition {
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+// Accent Color Hover 
+@mixin accent-hover {
+    &:hover {
+        color:$accent-color;
+    }
+}

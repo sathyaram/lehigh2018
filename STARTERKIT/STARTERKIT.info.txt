@@ -1,0 +1,21 @@
+name = STARTERKIT Theme
+description = This is a subtheme of lehigh2018.
+screenshot = screenshot.png
+core = 7.x
+base theme = lehigh2018
+
+stylesheets[all][] = css/lehigh2018.css
+stylesheets[all][] = css/custom.css
+scripts[] = js/custom.js
+
+regions[header]          = Header
+regions[navigation]      = Navigation
+regions[help]            = Help
+regions[highlighted]     = Highlighted
+regions[content]         = Content
+regions[sidebar_second]  = Right Sidebar
+regions[footer]          = Footer
+regions[sidebar_first]   = Unsupported First Sidebar
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
