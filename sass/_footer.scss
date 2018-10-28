@@ -1,0 +1,239 @@
+.footer {
+	background:$lehigh-brown;
+
+	.region-footer {
+		background:$light-gray;
+		display:flex;
+		padding:45px 15px;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+		text-align:center;
+		box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.1);
+
+		.block-bean > h2 {
+			display:none;
+		}
+
+		.department-name {
+			font-size:38px;
+			font-family:$headline-font;
+			font-style:italic;
+
+			@media screen and (max-width: $break-tablet) {
+				font-size:24px;
+			}
+		}
+
+		.social-media {
+			padding-top:15px;
+			a {
+				display:inline-block;
+				width:40px;
+				height:40px;
+				text-align:center;
+				line-height:44px;
+				border-radius:50%;
+				margin:0 2px;
+				// border: 1px solid $accent-color;
+				background:$accent-color;
+				color:$white;
+
+				i {
+					font-size:20px;
+				}
+
+				&:hover {
+					opacity:0.75;
+				}
+			}
+		}
+
+		.address {
+			padding:15px 0;
+		}
+
+		.phone-numbers {
+			@include clearfix;
+
+			.number {
+				display:inline-block;
+				padding:0 10px;
+
+				a {
+					color:$black;
+
+					&:hover {
+						color:$lehigh-brown;
+					}
+				}
+			}
+
+			.fax {
+				border-left:1px solid $black;
+
+				@media screen and (max-width: $break-mobile-portrait) {
+					border:none;
+				}
+			}
+
+			a {
+				color:$lehigh-brown;
+
+				&:hover {
+					color:$accent-color;
+				}
+			}
+		}
+	}
+
+	.lehigh-footer {
+		width:100%;
+		max-width:1000px;
+		margin: 0 auto;
+		padding:45px 20px;
+		display:flex;
+		flex-wrap:wrap;
+		text-align:center;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+
+		@media screen and (max-width: $break-tablet) {
+		    flex-direction: column;
+		}
+
+		.logo {
+			width:100%;
+			height:auto;
+			max-width:206px;
+			
+			a {
+				display:block;
+
+
+				img {
+					width:auto;
+					height:44px;
+					display:block;
+				}
+			}
+		}
+
+		.social-media {
+			text-align:center;
+			@include clearfix;
+
+			@media screen and (max-width: $break-tablet) {
+				padding:8px 0;
+			}
+
+			a {
+				color: $white;
+				display:inline-block;
+				padding:10px;
+
+				&:hover {
+					color: $lehigh-gold;
+				}
+
+				i {
+					font-size:34px;
+
+					@media screen and (max-width: $break-desktop) {
+						font-size:28px;
+					}
+
+					@media screen and (max-width: $break-tablet) {
+						font-size:24px;
+					}
+				}
+			}
+		}
+
+		.contact {
+			text-align:right;
+			color:$white;
+			font-size:16px;
+
+			@media screen and (max-width: 820px) {
+				font-size:15px;
+			}
+
+			@media screen and (max-width: $break-tablet) {
+			    text-align:center;
+			    font-size:14px;
+			}
+
+			address {
+				line-height:120%;
+
+				@media screen and (max-width: $break-tablet) {
+				    line-height:140%;
+				}
+			}
+
+			a {
+				color:$white;
+			}
+		}
+	}
+
+	.lehigh-menu {
+		padding-top:20px;
+		width:100%;
+		color:$white;
+		font-size:14px;
+
+		ul {
+			@include clearfix;
+			padding:5px 0;
+			line-height:150%;
+			display: flex;
+		    flex-wrap: wrap;
+		    justify-content: flex-start;
+
+		    @media screen and (max-width: $break-tablet) {
+		        justify-content: center;
+		        font-size:10px;
+		    }
+
+			li {
+				// float:left;
+
+				&.last {
+					a {
+						border:none;
+					}
+				}
+
+				a {
+					color:$white;
+					padding:0 6px;
+					border-right:1px solid rgba($lehigh-gold,0.5);
+					display:inline-block;
+
+					&:hover {
+						color: #ece810;
+					}
+				}
+			}
+		}
+	}
+
+	#fc {
+		padding:20px 15px;
+
+		li {
+			color:$white;
+
+			&.last {
+				border:none !important;
+			}
+
+			a {
+				color:$white;
+			}
+		}
+	}
+}

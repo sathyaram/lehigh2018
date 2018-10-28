@@ -1,0 +1,7 @@
+.sass-cache/
+.DS_Store
+._.*
+*~
+\#*\#
+css/*
+!css/.gitkeep
